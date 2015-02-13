@@ -1,2 +1,2 @@
-# my-first-github-repo
-An initial test repo for A100 Apprentices to use to practice on.
+# sam-rispaud-personal-website
+A personal website I'm designing with HTML and CSS through the A100 program.
