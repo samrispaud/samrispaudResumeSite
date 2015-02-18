@@ -1,82 +1,38 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
 body, html {
-  padding-top: 2.5em;
-  margin: 0;
+  margin: 0 0 0 0;
+  padding: 0;
   background-color: #fafafa;
-}
-
-.header-content {
   width: 100%;
-  vertical-align: middle;
-  text-align: center;
-  display: inline-block;
+  position: relative;
 }
 
-.header-text h1 {
-  font-family: "Merriweather";
-  font-variant: small-caps;
-  font-weight: 300;
-  letter-spacing: 1px;
-  
-  color: #212121;
-  
-  font-size: 1.3em;
+.paper h1, h2, h3, h4, h5, p, li, ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
+  font-family: 'Merriweather', Times;
 }
 
-.pic {
-  margin: 0 auto;
-  margin-top: .8em;
-  
-  border-radius: 10em;
-  height: 4em;
-  width: 4em;
-  background-image: url(https://scontent-a-lga.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/q88/p720x720/1911769_10202651170456295_1124641553_n.jpg?oh=faf7b4a9397372e99d94666f461574af&oe=558D75E8);
-  background-size: 100% auto;
-  
-  border: 2px solid #e0e0e0;
-  transition: all 0.5s linear;
-  
-}
 
-.pic:hover {
-  -webkit-transform: rotate(360deg);
-}
-
-.linkedin {
-  margin: 0 auto;
-  margin-top: 0.5em;
-  
-  border-radius: 10em;
-  height: 1.5em;
-  width: 1.5em;
-  background-image: url(http://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png);
-  background-size: 100% auto;
-  
-  border: 2px solid #e0e0e0;
-  margin-bottom: .5em;
-}
-
-.header-text {
-  margin-top: 0.5em;
-  margin-left: 1em;
-}
-
-.subtitle {
-  font-family: "Merriweather";
-  padding-top: 0;
-  font-size: 0.55em;
-  color: #424242;
-}
-
-/* Paper-looking border */
+/*
+  Paper-looking border
+*/
 
 .paper {
   margin: 0 auto;
-  margin-bottom:1em;
+  margin-bottom: 2em;
   
   background-color: white;
-  width: 60%;
+  width: 75%;
+  height: 80%;
   
-  padding: 0.5em 0 0.5em 0;
+  margin-top: 2.5em;
+  padding: 0.5em 0.2em 0.5em 0.2em;
   
   border-top: 1px solid #e0e0e0;
   border-left: 1px solid #e0e0e0;
@@ -85,181 +41,155 @@ body, html {
   border-radius: 3px;
 }
 
-/* Content portion */
+/*
+  Header styling
+*/
 
-.content-wrapper {
-  padding-right: 3.25%;
+.sam-pic {
+  margin: 0 auto;
+  margin-top: .4em;
+  margin-bottom: 1.2em;
+  border-radius: 10em;
+  height: 4em;
+  width: 4em;
+  background-image: url(https://scontent-a-lga.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/q88/p720x720/1911769_10202651170456295_1124641553_n.jpg?oh=faf7b4a9397372e99d94666f461574af&oe=558D75E8);
+  background-size: 100% auto;
+  border: 2px solid #e0e0e0;
+  transition: all 0.5s linear;
 }
 
-.content {
-  display: table;
-  width: 100%;
-  
-  padding-top:1.5em;
-  
-  border-top: 1px solid #eeeeee;
-  padding-bottom: 1.5em;
+.sam-pic:hover {
+  -webkit-transform: rotate(360deg);
 }
 
-.content:last-child {
-  padding-bottom: 1.5em;
+.header-container {
+  padding: .5em .5em .5em .5em;
 }
 
-.row {
-    display: table-row;
-
+h1 {
+  font-family: "Merriweather";
+  font-variant: small-caps;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #212121;
+  font-size: 2.1em;
+  text-align: center;
+  margin-bottom:0.5em;
 }
-.row div {
-    display: table-cell;
+
+.small-border {
+  width: 20%;
+  border-bottom: solid 1px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: .4em;
 }
 
-.content-cat {
+h2:first-of-type {
+  margin-top:1em;
+}
+
+h2 {
+  font-family: "Merriweather";
+  font-weight: 100;
+  letter-spacing: .6px;
+  color: #212121;
+  font-size: .9em;
+  text-align: center;
+  padding-bottom: .2em;
+}
+
+/*
+  Logos styling
+*/
+
+.contact-logos-container {
+  display: block;
+  width:20%;
+  height: 4em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  border: 2px solid #e0e0e0;
+  border-radius: 10em;
+  height: 1.5em;
+  width: 1.5em;
+}
+
+
+/*
+  Content blocks styling
+*/
+
+.content-block-container {
+  overflow: auto;
+  margin-bottom: 1.5em;
+  width:95%;
+}
+
+.content-block-heading-container {
+  float: left;
+  width: 25%;
+  padding-left: 2em;
+  padding-right: 0.1em;
+  border-right: 1px solid ##e0e0e0;
+}
+
+.heading {
   font-family: "Merriweather";
   font-variant: small-caps;
   font-weight: 300;
-  letter-spacing: 1px;
-  
+  letter-spacing: 1.4px;
   color: #212121;
-  
-  font-size: 0.975em;
-  
-  text-align: center;
-  vertical-align: middle;
-
-  padding-left: 6.66%;
-  width: 36.66%;
+  font-size: 1.2em;
 }
 
-.content-cat p {
-  font-size: 0.55em;
-  font-weight: 600;
+.dates {
+  margin-top: 0.3em;
   
-  margin-bottom: 0;
-}
-
-.content-text {
-  border-left: 1px solid #e0e0e0;
-}
-
-.content-text:hover {
-  border-left: 1px solid #bdbdbd;
-}
-
-.big-text {
-  vertical-align: top;
-  
-  padding-top: 1.25em;
-}
-
-.content-text ul {
-  padding: 0;
-  margin: 0;
-  margin-top: 0.15em;
-  
-  width: 85%;
-  margin-left: 1.5em;
-}
-
-.content-text ul:last-child {
-  margin-bottom: 0.5em;
-}
-
-.content-text ul li {
-  font-family: "Open Sans";
-  font-size: 0.7em;
-  
-  display: inline-block;
-  
-}
-
-.content-text ul li:first-child {
-  width: 35%;
-  
-  color: #424242;
-  
-  font-weight: 600;
-  font-size: 0.75;
-}
-
-.content-text ul li a {
-  text-decoration: none;
-  color: #0277bd;
-}
-
-.content-text ul li a:hover {
-  color:#4fc3f7;
-}
-
-.work-listing p {
-  font-family: "Open Sans";
-  font-size: 0.7em;
-  font-weight: 400;
-  
-  line-height: 1.5;
-  
-  color: #424242;
-  
-  margin-left: 2em;
-  margin-top: 0.25em;
-  margin-bottom: 0.75em;
+  font-family: "Merriweather";
+  font-variant: small-caps;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  color: #444444;
+  font-size: 0.8em;
 }
 
 
+.content-block-description-container {
+  float: left;
+  width: 70%;
+  height: 100%;
+}
 
-.highlight {
-  font-family: "Open Sans";
+.description {
   font-size: .85em;
+  font-weight: 100;
+  line-height: 1.2em;
+  font-family: 'Sans Open Source', Times;
   font-weight: 300;
   
-  color: #424242;
-  
-  margin-left: 3.25em;
+  margin-left: 3.1em;
   padding-left: 0.5em;
-  
+  margin-top: 0;
+  padding-top: 0;
+  margin-right: 0;
+}
+
+.highlight {
+  font-size: .8em;
   border-left: 1px solid #e0e0e0;
+  font-family: 'Sans Open Source', Times;
+  font-weight: 300;
+
+  margin-left: 6.25em;
+  padding-left: 0.5em;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
 }
 
-
-.education-listing .heading {
-  font-weight: 600;
-  
-  margin-top: 0.75em;
-  margin-left: 2em;
+.job-title-smaller {
+  font-size:0.9em;
 }
-
-.education-listing .highlight {
-  margin-left: 4.25em;
-}
-
-.content-text.skills-listing ul {
-  display: table-row;
-}
-
-.content-text.skills-listing ul:last-child {
-  margin-bottom: 0;
-}
-
-.content-text.skills-listing ul li {
-  display: table-cell;
-  vertical-align: top;
-  
-  padding-left: 2em;
-  
-  width: 50%;
-  font-weight: 600;
-}
-
-.skill-level {
-  font-weight: lighter;
-  font-size: 1em;
-  color: #313131;
-}
-
-.highlight p {
-  
-  font-size: 1em;
-  font-weight: 400;
-  
-  margin-left: 1.25em;
-}
-
