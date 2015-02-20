@@ -2,6 +2,10 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 
+*{
+  border: 1px solid;
+}
+
 body, html {
   margin: 0 0 0 0;
   padding: 0;
@@ -27,6 +31,7 @@ body, html {
 .paper {
   margin: 0 auto;
   margin-bottom: 2em;
+  min-width: 800px;
   
   background-color: white;
   width: 75%;
@@ -106,17 +111,20 @@ h2 {
 
 .contact-logos-container {
   display: block;
-  width:20%;
-  height: 4em;
+  height: 3.3em;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 img {
+  display: inline-block;
+  
   border: 2px solid #e0e0e0;
   border-radius: 10em;
   height: 1.5em;
-  width: 1.5em;
+  width: 1.5em; 
+  margin: 0 auto;
 }
 
 /*
@@ -140,10 +148,61 @@ img {
   font-size: .7em;
   
 }
+
+/*
+  Skills block styling
+*/
+
+.skills-block-container {
+  overflow: hidden;
+  width: 65%;
+  height: 100%;
+}
+
+.skill-block {
+  width: 48%;
+  display: inline-block;
+  vertical-align: top;
+  
+}
+.skill-heading {
+  width: 79%;
+  
+  font-size: .85em;
+  font-weight: 100;
+  line-height: 1.2em;
+  font-family: 'Sans Open Source', Times;
+  font-weight: 300;
+  
+  margin-left: 3.1em;
+  padding-left: 0.5em;
+  margin-top: 0;
+  padding-top: 0;
+  margin-right: 0;
+  
+}
+
+.skill {
+  width: 63%;
+  
+  font-size: .8em;
+  border-left: 1px solid #e0e0e0;
+  font-family: 'Sans Open Source', Times;
+  font-weight: 300;
+
+  margin-left: 6.25em;
+  padding-left: 0.5em;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+
+
 /*
   Content blocks styling
 */
-
+.content-block {
+  overflow: hidden;
+}
 .content-block-container {
   overflow: auto;
   margin-bottom: 1.5em;
@@ -178,14 +237,20 @@ img {
   font-size: 0.8em;
 }
 
-
+.education {
+  font-weight: bold;
+  
+}
 .content-block-description-container {
+  overflow: hidden;
   float: left;
   width: 70%;
   height: 100%;
 }
 
 .description {
+  width: 91%;
+  
   font-size: .85em;
   font-weight: 100;
   line-height: 1.2em;
@@ -197,9 +262,12 @@ img {
   margin-top: 0;
   padding-top: 0;
   margin-right: 0;
+  
 }
 
 .highlight {
+  width: 83%;
+  
   font-size: .8em;
   border-left: 1px solid #e0e0e0;
   font-family: 'Sans Open Source', Times;
@@ -219,21 +287,38 @@ img {
 
 /* Smartphones (portrait) ----------- */
 @media screen and (max-width: 600px) {
-  .heading, .description, .highlight, .dates {
+ .heading, .description, .highlight, .dates {
     display: none;
   }
   .resume-link-container {
   display: block;
   width: 100%;
   text-align: center;
+  }
+  .paper {
+    min-width: 350px;
+  }
+  h1 {
+    font-size: .9em;
+  }
+  h2, h3, h4, h5, p, a, li, ul {
+    font-size: .6em;
+  }
+  .resume-link {
+    font-size: .3em;
+
+  }
+  .content-block {
+    display: none;
   }
     
 }
 
 
+
+
 /* Smartphones (landscape) ----------- */
 @media only screen and (max-width : 400px) and (orientation: landscape) {
-  
   .heading, .description, .highlight, .dates {
     display: none;
   }
@@ -242,5 +327,21 @@ img {
   width: 100%;
   text-align: center;
   }
-    
+  .paper {
+    min-width: 350px;
+  }
+  h1 {
+    font-size: .9em;
+  }
+  h2, h3, h4, h5, p, a, li, ul {
+    font-size: .6em;
+  }
+  .resume-link {
+    font-size: .3em;
+
+  }
+  .content-block {
+    display: none;
+  }
+  
 }
