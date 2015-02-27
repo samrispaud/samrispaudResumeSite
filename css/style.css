@@ -2,15 +2,14 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 
-/**{
-  border: 1px solid;
+/** {
+  border: 1px solid black;
 }*/
 
 body, html {
   margin: 0 0 0 0;
   padding: 0;
   background-color: #fafafa;
-  background-image: url(http://i.istockimg.com/file_thumbview_approve/37367076/2/stock-photo-37367076-wild-flowers-drawing-seamless-pattern.jpg);
   width: 100%;
   position: relative;
 }
@@ -22,6 +21,7 @@ body, html {
   position: relative;
   font-family: 'Merriweather', Times;
 }
+
 
 
 /*
@@ -37,7 +37,7 @@ body, html {
   width: 75%;
   height: 80%;
   
-  margin-top: 2.5em;
+  margin-top: 4.3em;
   padding: 0.5em 0.2em 0.5em 0.2em;
   
   border-top: 1px solid #e0e0e0;
@@ -53,11 +53,11 @@ body, html {
 
 .sam-pic {
   margin: 0 auto;
-  margin-top: .4em;
-  margin-bottom: 1.2em;
+  margin-top: -3em;
+  margin-bottom: .3em;
   border-radius: 10em;
-  height: 4.8em;
-  width: 4.8em;
+  height: 3.8em;
+  width: 3.8em;
   background-image: url(https://scontent-a-lga.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/q88/p720x720/1911769_10202651170456295_1124641553_n.jpg?oh=faf7b4a9397372e99d94666f461574af&oe=558D75E8);
   background-size: 100% auto;
   border: 2px solid #e0e0e0;
@@ -77,8 +77,7 @@ h1 {
   font-variant: small-caps;
   font-weight: 500;
   letter-spacing: 2px;
-  color: #212121;
-  font-size: 2.1em;
+  font-size: 1.6em;
   text-align: center;
   margin-bottom:0.5em;
 }
@@ -88,11 +87,11 @@ h1 {
   border-bottom: solid 1px;
   margin-left: auto;
   margin-right: auto;
-  padding: .4em;
+  padding: .2em;
 }
 
 h2:first-of-type {
-  margin-top:1em;
+  margin-top:.8em;
 }
 
 h2 {
@@ -100,7 +99,7 @@ h2 {
   font-weight: 100;
   letter-spacing: .6px;
   color: #212121;
-  font-size: .9em;
+  font-size: .8em;
   text-align: center;
   padding-bottom: .2em;
 }
@@ -111,7 +110,7 @@ h2 {
 
 .contact-logos-container {
   display: block;
-  height: 3.3em;
+  height: 2.9em;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -151,8 +150,39 @@ img {
 
 /*
   Skills block styling
+
+  =================
+  Circle Graph using (https://github.com/rendro/easy-pie-chart)
+  ================
 */
 
+.chart{
+  position: relative;
+  display: inline-block;
+  width: 110px;
+  height: 110px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+.chart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.skill {
+  font-size: 0.6em;
+}
+
+.skill-description {
+  font-size: 0.77em;
+  padding: 6px;
+  font-family: 'Open Source Sans';
+  font-style: initial;
+  text-align: center;
+
+
+}
 .skills-block-container {
   overflow: hidden;
   width: 65%;
@@ -160,11 +190,27 @@ img {
 }
 
 .skill-block {
-  width: 48%;
   display: inline-block;
   vertical-align: top;
+  margin-left: 3px;
+  margin-right: 3px;
   
 }
+#based {
+}
+#statistical {
+    margin-left: 38px;
+    margin-bottom: 15px;
+}
+#web {
+  margin-left: 18px;
+
+}
+#programming {
+  margin-left: 30px;
+
+}
+
 .skill-heading {
   width: 79%;
   
@@ -182,19 +228,8 @@ img {
   
 }
 
-.skill {
-  width: 63%;
-  
-  font-size: .8em;
-  border-left: 1px solid #e0e0e0;
-  font-family: 'Sans Open Source', Times;
-  font-weight: 300;
 
-  margin-left: 6.25em;
-  padding-left: 0.5em;
-  margin-bottom: 0.5em;
-  margin-top: 0.5em;
-}
+
 
 
 /*
@@ -205,8 +240,12 @@ img {
 }
 .content-block-container {
   overflow: auto;
-  margin-bottom: 1.5em;
+  margin-bottom: 2em;
   width:95%;
+}
+
+#education {
+  margin-bottom:1em;
 }
 
 .content-block-heading-container {
@@ -221,9 +260,9 @@ img {
   font-family: "Merriweather";
   font-variant: small-caps;
   font-weight: 300;
-  letter-spacing: 1.4px;
+  letter-spacing: .6px;
   color: #212121;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .dates {
@@ -234,11 +273,11 @@ img {
   font-weight: 300;
   letter-spacing: 0.5px;
   color: #444444;
-  font-size: 0.8em;
+  font-size: 0.7em;
 }
 
 .education {
-  font-weight: bold;
+  font-weight: 600;
   
 }
 .content-block-description-container {
@@ -251,7 +290,7 @@ img {
 .description {
   width: 91%;
   
-  font-size: .85em;
+  font-size: .8em;
   font-weight: 100;
   line-height: 1.2em;
   font-family: 'Sans Open Source', Times;
@@ -268,7 +307,7 @@ img {
 .highlight {
   width: 83%;
   
-  font-size: .8em;
+  font-size: .78em;
   border-left: 1px solid #e0e0e0;
   font-family: 'Sans Open Source', Times;
   font-weight: 300;
@@ -295,8 +334,11 @@ img {
   width: 100%;
   text-align: center;
   }
+  .contact-logos-container {
+    height: 1em;
+  }
   .paper {
-    min-width: 350px;
+    min-width: 150px;
   }
   h1 {
     font-size: .9em;
@@ -327,8 +369,11 @@ img {
   width: 100%;
   text-align: center;
   }
+  .contact-logos-container {
+    height: 1em;
+  }
   .paper {
-    min-width: 350px;
+    min-width: 150px;
   }
   h1 {
     font-size: .9em;
@@ -343,5 +388,5 @@ img {
   .content-block {
     display: none;
   }
-  
+    
 }
